@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Gianmarco Cavallo - Privacy policy</title>
+	<title>Diogo Magalhães - Privacy policy</title>
 </svelte:head>
 
 <div class="container">
@@ -42,7 +42,7 @@
 			<li>
 				<p>
 					<strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot;
-					or &quot;Our&quot; in this Agreement) refers to Gianmarco Cavallo.
+					or &quot;Our&quot; in this Agreement) refers to Diogo Magalhães.
 				</p>
 			</li>
 			<li>
@@ -87,7 +87,7 @@
 			</li>
 			<li>
 				<p>
-					<strong>Website</strong> refers to Gianmarco Cavallo, accessible from
+					<strong>Website</strong> refers to Diogo Magalhães, accessible from
 					<a href="gianmarco.xyz" rel="external nofollow noopener" target="_blank">gianmarco.xyz</a>
 				</p>
 			</li>

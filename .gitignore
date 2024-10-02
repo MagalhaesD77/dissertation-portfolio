@@ -93,3 +93,4 @@ typings/
 
 .netlify/*
 build/*
+build
