@@ -7,6 +7,8 @@
 	const articles = [...devToArticles];
 
 	const filteredArticles = articles.filter((article) => !blackListedArticles.includes(article?.id));
+
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -30,7 +32,7 @@
 				</p>
 
 				<a
-					href={article.id ? `/blog/${article.id}` : article.link}
+					href={article.id ? `${base}/blog/${article.id}` : article.link}
 					target={!article.id ? '_blank' : '_self'}
 				>
 					<div class="button">Read Article =></div>

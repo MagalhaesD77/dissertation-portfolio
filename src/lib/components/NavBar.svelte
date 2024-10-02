@@ -4,11 +4,12 @@
 	import routes from '$lib/NavRoutes';
 	let opened = false;
 	export let segment: string;
+	import { base } from '$app/paths';
 </script>
 
 <div class={opened ? 'NavBar open' : 'NavBar'}>
 	<div class="innerContainer">
-		<a href="/">
+		<a href="{base}/">
 			<img src={Logo} alt="logo" class="logo" />
 		</a>
 		<div class="burger">

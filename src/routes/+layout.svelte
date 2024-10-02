@@ -10,6 +10,7 @@
 	import { customBackground } from '$lib/store';
 	import { Email } from '$lib/Constants';
 	// import routes from '$lib/NavRoutes';
+	import { base } from '$app/paths';
 
 	let copied = false;
 	const cookieEnabled = false;
@@ -61,7 +62,7 @@
 
 {#if showCookieModal && cookieEnabled}
 	<div class="cookieContainer">
-		<p>🍪 This website use <a href="privacy-policy">Cookies.</a></p>
+		<p>🍪 This website use <a href="{base}/privacy-policy">Cookies.</a></p>
 		<div
 			role="button"
 			tabindex="0"
@@ -121,7 +122,7 @@
 <slot />
 
 <footer>
-	Created by <a class="me" href="/about">Ladvace</a> ❤️ with
+	Created by <a class="me" href="{base}/about">Ladvace</a> ❤️ with
 	<span class="svelte">Svelte</span>
 </footer>
 
