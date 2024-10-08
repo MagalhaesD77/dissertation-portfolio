@@ -1,3 +1,4 @@
+import { base } from '$app/paths';
 
 const blogs = [
     {
@@ -31,7 +32,7 @@ This is a paragraph.
 ![test image](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
 
 # test local image
-![test image](/logo.svg)
+![test image](${base}/logo.svg)
 `
     },
   ]
