@@ -1,9 +1,9 @@
-import { ArticleEndPoint } from '$lib/Constants';
 import type { PageLoad } from './$types';
+import blogs from '$lib/Articles';
 
 export const load = (async ({ params }) => {
-	let response = await fetch(`${ArticleEndPoint}/${params.slug}`);
+	let article = blogs.find((article) => article.id === Number(params.slug));
 	return {
-		article: response.ok && (await response.json())
+		article
 	};
 }) satisfies PageLoad;

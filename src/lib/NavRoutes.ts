@@ -2,20 +2,20 @@ import { base } from '$app/paths';
 
 const routes = [
 	{
-		href: `${base}`,
+		href: `${base}/`,
 		label: 'Home'
 	},
 	{
 		href: `${base}/projects`,
-		label: 'Projects'
+		label: 'Repositories'
+	},
+	{
+		href: `${base}/blog`,
+		label: 'Activities'
 	},
 	{
 		href: `${base}/about`,
 		label: 'About'
-	},
-	{
-		href: `${base}/blog`,
-		label: 'Blog'
 	}
 ];
 

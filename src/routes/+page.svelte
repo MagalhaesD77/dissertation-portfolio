@@ -2,15 +2,17 @@
 	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
 	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
 	import FaEnvelope from 'svelte-icons/fa/FaEnvelope.svelte';
+	import FaGitAlt from 'svelte-icons/fa/FaGitAlt.svelte'
 	import FaMedium from 'svelte-icons/fa/FaMedium.svelte';
 	import { modalOpened } from '$lib/store';
+	import { Github, Linkedin, MasterRepo } from '$lib/Constants';
 </script>
 
 <svelte:head>
 	<title>Diogo Magalhães - Main page</title>
 </svelte:head>
 <main>
-	<h1>Hi!✋ <br /> I'm Diogo a Front-End Developer 💻 based in Italy</h1>
+	<h1>Hi!✋ <br/> I'm Diogo Magalhães <br/> and this is my Portfolio of activities for PD/E</h1>
 	<div class="icons">
 		<div
 			role="button"
@@ -28,7 +30,7 @@
 		</div>
 
 		<a
-			href="https://github.com/Ladvace"
+			href="{Github}"
 			aria-label="GitHub"
 			target="_blank"
 			rel="noopener noreferrer"
@@ -38,23 +40,23 @@
 			</div>
 		</a>
 		<a
-			href="https://www.linkedin.com/in/ladvace/"
+			href="{MasterRepo}"
+			aria-label="Organization"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<div class="icon">
+				<FaGitAlt />
+			</div>
+		</a>
+		<a
+			href="{Linkedin}"
 			aria-label="Linkedin"
 			target="_blank"
 			rel="noopener noreferrer"
 		>
 			<div class="icon">
 				<FaLinkedin />
-			</div>
-		</a>
-		<a
-			href="https://medium.com/@ladvace"
-			aria-label="Medium"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<div class="icon">
-				<FaMedium />
 			</div>
 		</a>
 	</div>

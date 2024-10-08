@@ -1,15 +1,8 @@
-import { UserInfoEndpoint } from '$lib/Constants';
-import { error } from '@sveltejs/kit';
+import blogs from '$lib/Articles';
 
-export async function load({ fetch }) {
+export async function load() {
 	let devToArticles;
-	try {
-		devToArticles = await fetch(`${UserInfoEndpoint}ladvace`);
-
-		devToArticles = await devToArticles.json();
-	} catch (e) {
-		throw error(404, 'Not found');
-	}
+	devToArticles = blogs;
 
 	return {
 		devToArticles

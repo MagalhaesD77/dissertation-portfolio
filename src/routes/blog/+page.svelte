@@ -25,17 +25,17 @@
 					<h2>
 						{article.title}
 					</h2>
-					<div>Tags: {article.tags || article.category}</div>
+					<div>Tags: {article.tags}</div>
 				</div>
 				<p>
 					{article.description || ''}
 				</p>
 
 				<a
-					href={article.id ? `${base}/blog/${article.id}` : article.link}
+					href={`${base}/blog/${article.id}`}
 					target={!article.id ? '_blank' : '_self'}
 				>
-					<div class="button">Read Article =></div>
+					<div class="button">Read Article</div>
 				</a>
 			</div>
 		{/each}
@@ -95,6 +95,14 @@
 	}
 
 	.article p {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
+		word-break: break-all;
+		hyphens: auto;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
 		font-weight: 100;
 		color: #708090;
 	}

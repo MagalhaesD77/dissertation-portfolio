@@ -121,9 +121,9 @@
 
 <slot />
 
-<footer>
-	Created by <a class="me" href="{base}/about">Ladvace</a> ❤️ with
-	<span class="svelte">Svelte</span>
+<footer style="min-height: 0px; visibility: hidden;">
+	<!-- Created by <a class="me" href="{base}/about">Diogo Magalhães</a> ❤️ with
+	<span class="svelte">Svelte</span> -->
 </footer>
 
 <style>
