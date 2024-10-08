@@ -32,3 +32,6 @@ This repo in ready to be deployed on GitHub Pages. For it you just need to commi
 
 Template made by
 - Gianmarco - https://github.com/Ladvace
+
+Edited by
+- Diogo Magalhães - https://github.com/MagalhaesD77

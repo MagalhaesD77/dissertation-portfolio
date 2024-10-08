@@ -1,19 +1,18 @@
 <script>
-	import projects from '$lib/Projects';
+	import repositories from '$lib/Repositories';
 </script>
 
 <svelte:head>
-	<title>Diogo Magalhães — Projects</title>
+	<title>Repositories</title>
 </svelte:head>
 
 <div class="projectContainer">
-	<div class="projects">
-		<h1>Projects</h1>
+	<div class="repositories">
+		<h1>Repositories</h1>
 		<p class="note">
-			Note: most of my projects are under NDA so I am unable to share those projects. If there is
-			anything you would like to see further, please feel free to contact me.
+			Note: The following repositories are aglomerated in a single Main Repository on <a href="https://github.com/MagalhaesD77/master-thesis" class="linkRepo" target="_blank">Master Thesis Repository</a>.
 		</p>
-		{#each projects as project}
+		{#each repositories as project}
 			<div class="project">
 				<div class="header">
 					<h2>
@@ -32,7 +31,7 @@
 					{project.description}
 				</p>
 				<a href={project.url} target="_blank" rel="noreferrer">
-					<div class="button">Project url =></div>
+					<div class="button">Go To Repository</div>
 				</a>
 			</div>
 		{/each}
@@ -40,6 +39,18 @@
 </div>
 
 <style>
+	.linkRepo {
+		color: #66ccff;
+		text-decoration: none;
+		font-weight: bold;
+		transition: color 0.3s ease;
+	}
+
+	.linkRepo:hover {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+
 	.projectContainer {
 		width: 100%;
 		max-width: 900px;
@@ -63,7 +74,7 @@
 		text-decoration: none;
 	}
 
-	.projectContainer .projects {
+	.projectContainer .repositories {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 40px;
@@ -97,9 +108,17 @@
 	.project p {
 		font-weight: 100;
 		color: #708090;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
+		word-break: break-all;
+		hyphens: auto;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
-	.projects {
+	.repositories {
 		width: 100%;
 		margin: 50px auto;
 		display: grid;
@@ -136,16 +155,16 @@
 		.projectContainer {
 			padding: 0;
 		}
-		.projects > h1 {
+		.repositories > h1 {
 			font-size: 48px;
 			margin: 50px 0 0 0;
 		}
 
-		.projects {
+		.repositories {
 			grid-template-columns: 1fr;
 		}
 
-		.projects .project {
+		.repositories .project {
 			min-height: 200px;
 		}
 		.button {
@@ -154,7 +173,7 @@
 	}
 
 	@media (min-width: 600px) {
-		.projects {
+		.repositories {
 			grid-template-columns: 1fr;
 		}
 	}

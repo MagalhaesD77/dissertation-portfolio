@@ -1,5 +1,4 @@
 <script>
-	import skills from '$lib/Skills';
 </script>
 
 <svelte:head>
@@ -10,32 +9,46 @@
 	<main>
 		<h1>About</h1>
 		<p>
-			I'm a Software developer with over 2 years of front-end development experience, experienced in
-			both enterprise and open-source software development. I'm based in Italy and currently working
-			as a freelancer and coding in Node.js, React.js (and other web technologies) and Go(lang), but
-			I tend to learn and use the best technology and approach to best solve the problem I'm facing.
+			Hello! My name is Diogo Magalhães, I am from Portugal and I'm currently pursuing my Master's degree in Software Engineering at University of Aveiro.
+
+			I am currently working on my thesis project, which is focused on low-latency computing solutions focusing on Multi-access Edge Computing (MEC), a paradigm designed to bring cloud computing closer to the network's edge. More specifically, this thesis will continue the work related to an open-source MEC orchestrator, particularly realizing the automatic migration of applications between different MEC clusters. This functionality will, among others, fit multi-domain use cases and cloud-edge computing scenarios.
 		</p>
-		<h2>Skills</h2>
-		{#each Object.entries(skills) as [section, technologies]}
-			<ul>
-				<li>
-					<h4>
-						{section}:
-					</h4>
-					<div class="list">
-						{#each technologies as technology}
-							<div>
-								{technology}
-							</div>
-						{/each}
-					</div>
-				</li>
-			</ul>
-		{/each}
+
+		<div>
+			<h2 class="supervisor-header">Supervisors:</h2>
+			<p class="supervisor-info">
+				Supervisor: Prof. Diogo Gomes (<a class="mailTo" href="mailto:dgomes@ua.pt">dgomes@ua.pt</a>)
+				<br />
+				Collaborator: Pedro Escaleira (<a class="mailTo" href="mailto:escaleira@ua.pt">escaleira@ua.pt</a>)
+				<br />
+				Co-Supervisor: Prof. Rui L. Aguiar (<a class="mailTo" href="mailto:ruilaa@ua.pt">ruilaa@ua.pt</a>)
+			</p>
+		</div>
+
 	</main>
 </div>
 
 <style>
+	.mailTo {
+		color: #66ccff;
+		text-decoration: none;
+		font-weight: bold;
+		transition: color 0.3s ease;
+	}
+
+	.mailTo:hover {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+
+	.supervisor-header {
+		margin-bottom: 0.5rem; /* Adjust as needed */
+	}
+
+	.supervisor-info {
+		margin-top: 0; /* You can also set this to a smaller value if necessary */
+	}
+
 	.container {
 		max-width: 900px;
 		padding: 0;
@@ -58,20 +71,7 @@
 		text-align: start;
 	}
 
-	h2 {
-		margin-top: 50px;
-	}
-
-	.list {
-		display: flex;
-		flex-direction: column;
-		gap: 30px;
-	}
-
 	@media (min-width: 900px) {
-		.list {
-			flex-direction: row;
-		}
 		main > h1 {
 			font-size: 48px;
 		}

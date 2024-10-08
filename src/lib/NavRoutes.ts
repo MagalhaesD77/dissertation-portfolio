@@ -6,7 +6,7 @@ const routes = [
 		label: 'Home'
 	},
 	{
-		href: `${base}/projects`,
+		href: `${base}/repositories`,
 		label: 'Repositories'
 	},
 	{
