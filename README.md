@@ -26,7 +26,7 @@ $ npm run dev
 
 ## Deploy on Github Pages 🚀
 
-This repo in ready to be deployed on GitHub Pages. For it you just need to commit to your repository and enable GitHub Pages deployment using `workflows` on your repository settings.
+This portfolio is ready to be deployed on GitHub Pages. To do so, commit these files to your repository and enable GitHub Pages deployment using `workflows` in your repository settings.
 
 ## Authors ❤️
 
