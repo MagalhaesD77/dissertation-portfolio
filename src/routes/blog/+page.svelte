@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-	<title>Diogo Magalhães — Blog</title>
+	<title>Activities</title>
 </svelte:head>
 
 <div class="articlesContainer">

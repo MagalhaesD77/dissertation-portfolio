@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>Diogo Magalhães - Main page</title>
+	<title>Main</title>
 </svelte:head>
 <main>
 	<h1>Hi!✋ <br/> I'm Diogo Magalhães <br/> and this is my Portfolio of activities for PD/E</h1>

@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>Diogo Magalhães — {article?.title || 'Missing article'}</title>
+	<title>{article?.title || 'Missing article'}</title>
 </svelte:head>
 
 <div class="articleContainer">

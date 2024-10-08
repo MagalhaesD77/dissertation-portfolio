@@ -2,7 +2,7 @@
 </script>
 
 <svelte:head>
-	<title>Diogo Magalhães — About</title>
+	<title>About</title>
 </svelte:head>
 
 <div class="container">

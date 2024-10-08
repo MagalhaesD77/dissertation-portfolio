@@ -8,9 +8,9 @@
 	role="button"
 	tabindex="0"
 	on:keypress={() => {
-		window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${Email}`;
+		window.location.href = `mailto:${Email}`;
 	}}
-	on:click={() =>window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${Email}`}
+	on:click={() =>window.location.href = `mailto:${Email}`}
 >
 	<slot />
 </div>
