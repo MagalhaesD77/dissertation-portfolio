@@ -6,7 +6,7 @@ This repo contains my Portfolio of Activities for the PD/E course in my Master's
 
 ```
 # Clone this repository
-$ git clone git@github.com:MagalhaesD77/master-thesis-portfolio.git
+$ git clone git@github.com:MagalhaesD77/dissertation-portfolio.git
 ```
 
 ```
