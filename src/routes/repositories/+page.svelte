@@ -18,27 +18,55 @@
 					<h2>
 						{project.title}
 					</h2>
-					<div class="techsContainer">
-						Technologies:
-						<div class="techs">
-							{#each project.technologies as tech}
-								<div>{tech}</div>
-							{/each}
+					{#if project.technologies.length > 0}
+						<div class="techsContainer">
+							Technologies:
+							<div class="techs">
+								{#each project.technologies as tech}
+									<div>{tech}</div>
+								{/each}
+							</div>
 						</div>
-					</div>
+					{/if}
 				</div>
 				<p>
 					{project.description}
 				</p>
-				<a href={project.url} target="_blank" rel="noreferrer">
-					<div class="button">Go To Repository</div>
-				</a>
+				<div class="button-container">
+					{#if project.url}
+						<a href={project.url} target="_blank" rel="noreferrer">
+						<div class="button">Go To Repository</div>
+						</a>
+					{/if}
+					{#if project.file} 
+						<a href={project.file} target="_blank" rel="noreferrer">
+						<div class="button">Download</div>
+						</a>
+					{/if}
+				</div>
 			</div>
 		{/each}
 	</div>
 </div>
 
 <style>
+	.button-container {
+		display: flex;
+		gap: 10px; /* Add spacing between the buttons */
+	}
+
+	.button {
+		padding: 10px 20px;
+		/* background-color: #007bff;  Button background color */
+		color: white;
+		text-align: center;
+		border-radius: 5px;
+		cursor: pointer;
+		text-decoration: none;
+		font-size: 16px;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	}
+
 	.linkRepo {
 		color: #66ccff;
 		text-decoration: none;
